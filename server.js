@@ -6,10 +6,11 @@
 
 const fs = require('fs');
 const showdown  = require('showdown');
+const config = require('./config.json');
 
 const mdDir = './md';
-
-fs.readdirSync(mdDir).forEach((file, index, arr) => {
+const farr = fs.readdirSync(mdDir)
+farr.forEach((file, index, arr) => {
     // Tell Terminal which file is being worked on
     console.log("Working on file: " + file + " | " + (index + 1) + " of " + arr.length)
     // Create Path to file
@@ -25,3 +26,15 @@ fs.readdirSync(mdDir).forEach((file, index, arr) => {
     // Tell Terminal which file is finished
     console.log("Finished: " + file + " | " + (index + 1) + " of " + arr.length)
 });
+
+// Write to pages.json
+
+// Map Array to Object
+const pgdt = farr.map((file) => {
+    //
+    return {
+        "name": file.replace(".md", "").replace("_", " "),
+        "url": "/p/" + file.replace(".md", ".html")
+    }
+})
+fs.writeFileSync("pages.json", JSON.stringify({ info: config, pages: pgdt}, null, 4), "utf8")

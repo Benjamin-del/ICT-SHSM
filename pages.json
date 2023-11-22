@@ -1,0 +1,12 @@
+{
+    "info": {
+        "name": "ICT SHSM @ ASH",
+        "authours": "People"
+    },
+    "pages": [
+        {
+            "name": "test",
+            "url": "/p/test.html"
+        }
+    ]
+}
