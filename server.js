@@ -39,6 +39,12 @@ farr.forEach((file, index, arr) => {
             <div>
                 ${marked.parse(md)}
             </div>
+            <div>
+                <h4>Page Source</h4>
+                <p>Page Generated: ${new Date()}</p>
+                <a href="/${config.mdDir + "/" + file}">View Raw Source</a>
+                <a href="${config.github}/blob/main/${config.mdDir + "/" + file}">View On Github</a>
+            </div>
         </body>
     </html>`
     // Write to file (in P directory)
@@ -59,6 +65,6 @@ farr.forEach((file, index, arr) => {
 
 // Write pages.json
 console.log("Updating Pages Database")
-fs.writeFileSync("pages.json", JSON.stringify({ info: config, pages: pgdt }, null, 4), "utf8")
+fs.writeFileSync("pages.json", JSON.stringify({ info: config, update: new Date(), pages: pgdt }, null, 4), "utf8")
 console.log("Page Database Updated")
 console.log("Process Complete")

@@ -2,8 +2,10 @@
     "info": {
         "name": "ICT SHSM @ ASH",
         "authours": "People",
-        "mdDir": "./md"
+        "mdDir": "./md",
+        "github": "https://github.com/Benjamin-del/ICT-SHSM"
     },
+    "update": "2023-11-22T16:29:45.363Z",
     "pages": [
         {
             "name": "about",
