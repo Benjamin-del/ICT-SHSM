@@ -7,14 +7,19 @@
         "url": "https://benjamin-del.github.io/ICT-SHSM",
         "customization": {
             "display_source": true,
-            "css_path": false
+            "css": false,
+            "head": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "pre_content": "<div class=\"container\">",
+            "post_content": "</div>",
+            "footer_class": "footer",
+            "footer": "<p>Created by Some People in a class at All Saints</p>"
         }
     },
-    "update": "2023-11-22T17:39:42.574Z",
+    "update": "2023-11-22T18:11:18.691Z",
     "pages": [
         {
-            "name": "about",
-            "url": "/p/about.html"
+            "name": "ben",
+            "url": "/p/ben.html"
         }
     ]
 }
