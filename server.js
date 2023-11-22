@@ -42,7 +42,7 @@ farr.forEach((file, index, arr) => {
             <div>
                 <h4>Page Source</h4>
                 <p>Page Generated: ${new Date()}</p>
-                <a href="/${config.mdDir + "/" + file}">View Raw Source</a>
+                <a href="../${config.mdDir + "/" + file}">View Raw Source</a>
                 <a href="${config.github}/blob/main/${config.mdDir + "/" + file}">View On Github</a>
             </div>
         </body>
