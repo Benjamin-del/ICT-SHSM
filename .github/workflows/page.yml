@@ -1,25 +1,12 @@
-name: Deploy to GitHub Pages
-run-name: Run Custom SSR
-
-on:
-  workflow_dispatch:
-    
 jobs:
     # Build job
-
     build:
-        steps: 
-            - name: Checkout
-              uses: actions/checkout@v2
-            - name: Install dependencies
-              run: npm install
-            - name: Build
-              run: node server.js
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact
       # <Not provided for brevity>
       # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-  
+    runs-on: ubuntu-latest
+    steps: 
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact
     # Deploy job
     deploy:
       # Add a dependency to the build job
@@ -41,4 +28,3 @@ jobs:
         - name: Deploy to GitHub Pages
           id: deployment
           uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
-  
