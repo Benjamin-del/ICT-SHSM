@@ -2,52 +2,29 @@
 
 name: Update Files
 run-name: Run Custom SSR
-
-on:
-  workflow_dispatch:
-    
 jobs:
-  run-ssr:
+  # Build job
+  build:
     runs-on: ubuntu-latest
-    name:  Update SSR Files
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Run Script
-      run:  node server.js
-  build: 
-    runs-on: ubuntu-latest
-    name: Build
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Fix permissions
-      run: |
-        chmod -c -R +rX "_site/" | while read line; do
-          echo "::warning title=Invalid file permissions automatically fixed::$line"
-        done
-    - name: Upload Pages artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-        name: github-pages
-  
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Build with Node
+        run: node server.js
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
+  # Deployment job
   deploy:
-    needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    # Deploy to the github-pages environment
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+      url: ${{steps.deployment.outputs.page_url}}
     runs-on: ubuntu-latest
-    name: Deploy
-    # Add a dependency to the build job
+    needs: build
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action    
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
