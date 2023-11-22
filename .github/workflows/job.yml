@@ -25,8 +25,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
       # Run the (Custom) SSR script
+      # Add the a flag to signify it is run by a GH Action.
       - name: Run SSR
-        run: node server.js
+        run: node server.js -a
       # Build the site with Jekyll, this configures all of the required files
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1

@@ -8,6 +8,8 @@ const { marked } = require('marked');
 
 const config = require('./config.json');
 const mdDir = './md';
+const process = require('process');
+
 
 const farr = fs.readdirSync(mdDir)
 farr.forEach((file, index, arr) => {
@@ -39,11 +41,26 @@ farr.forEach((file, index, arr) => {
 // Write to pages.json
 
 // Map Array to Object
+const act = process.argv[2] === "-a" || false
+if (act) {
+    console.log("GH Pages Mode - No .html extension")
+} else {
+    console.log("Local Mode - .html extension")
+
+}
 const pgdt = farr.map((file) => {
     //
     return {
         "name": file.replace(".md", "").replace("_", " "),
-        "url": "/p/" + file.replace(".md", ".html")
+        "url": "/p/" + (function () {
+            if (act) {
+                return file.replace(".md", "")
+            } else {
+                return file.replace(".md", ".html")
+            }
+        })(),
     }
 })
+
+
 fs.writeFileSync("pages.json", JSON.stringify({ info: config, pages: pgdt}, null, 4), "utf8")
