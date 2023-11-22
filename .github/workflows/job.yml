@@ -1,9 +1,10 @@
+name: Update Files 1
+run-name: Run Custom SSR 1
+on: 
+  push:
+
 jobs:
   # Build job
-  name: Boilerplate
-  run-name: Build
-  on: 
-    push:
   build:
     runs-on: ubuntu-latest
     steps:
