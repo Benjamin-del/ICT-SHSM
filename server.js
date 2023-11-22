@@ -8,6 +8,7 @@ const fs = require('fs');
 const { marked } = require('marked');
 const process = require('process');
 const config = require('./config.json');
+const prettify = require('html-prettify');
 
 function toTitleCase(str) {
     return str.replace(
@@ -45,7 +46,7 @@ farr.forEach((file, index, arr) => {
     const md = fs.readFileSync(pth, 'utf8');
     // Convert to HTML
     // Wrap in HTML
-    const parse = `<!DOCTYPE html>
+    const html = `<!DOCTYPE html>
     <html>
         <head>
             <title> ${config.name} | ${toTitleCase(file.replace(".md", "").replace("_", " "))}</title>
@@ -54,7 +55,7 @@ farr.forEach((file, index, arr) => {
         </head>
         <body>
             ${config.customization.pre_content}
-            ${marked.parse(md)}
+            ${prettify(marked.parse(md))}
             ${config.customization.post_content}
             <div class='${config.customization.footer_class}'>
                 ${getsrc()}
@@ -86,7 +87,7 @@ farr.forEach((file, index, arr) => {
         }
     }
     // Write to file (in P directory)
-    fs.writeFileSync("./p/" + file.replace(".md", ".html"), parse, "utf8")
+    fs.writeFileSync("./p/" + file.replace(".md", ".html"), html, "utf8")
     // Tell Terminal which file is finished
     pgdt.push({
         "name": file.replace(".md", "").replace("_", " "),

@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "html-prettify": "^1.0.7",
     "marked": "^10.0.0"
   }
 }
