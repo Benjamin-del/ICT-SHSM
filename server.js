@@ -91,7 +91,7 @@ farr.forEach((file, index, arr) => {
     // Tell Terminal which file is finished
     pgdt.push({
         "name": file.replace(".md", "").replace("_", " "),
-        "url": config.htmlDir + "/" + (function () {
+        "url": config.htmlDir.replace(".","") + "/" + (function () {
             if (act) {
                 return file.replace(".md", "")
             } else {

@@ -16,11 +16,11 @@
             "footer": "<p>Created by Some People in a class at All Saints</p>"
         }
     },
-    "update": "2023-11-22T19:17:48.533Z",
+    "update": "2023-11-22T19:20:10.786Z",
     "pages": [
         {
             "name": "demo",
-            "url": "./p/demo.html"
+            "url": "/p/demo.html"
         }
     ]
 }
