@@ -1,0 +1,28 @@
+# (c) 2023 Benjamin-Del
+
+
+name: Update Files
+run-name: Run Custom SSR
+
+on:
+  workflow_dispatch:
+    
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    name:  Update SSR Files
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run Script
+      run:  node server.js
+    - name: Push Update
+      run: |
+        git config --global user.name "${{ github.actor }} [Via GitHub Actions]"
+        git config --global user.email "${{ secrets.EMAIL }}"
+  
+        git add -A
+        git commit --allow-empty -m "Update files via GH Actions"
+        git push
+    - 
+    
