@@ -2,6 +2,7 @@
     "name":"ICT SHSM @ ASH",
     "authours":"People",
     "mdDir":"./md",
+    "htmlDir":"./p",
     "github":"https://github.com/Benjamin-del/ICT-SHSM",
     "url":"https://benjamin-del.github.io/ICT-SHSM",
     "customization": {

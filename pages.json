@@ -3,6 +3,7 @@
         "name": "ICT SHSM @ ASH",
         "authours": "People",
         "mdDir": "./md",
+        "htmlDir": "./p",
         "github": "https://github.com/Benjamin-del/ICT-SHSM",
         "url": "https://benjamin-del.github.io/ICT-SHSM",
         "customization": {
@@ -15,11 +16,11 @@
             "footer": "<p>Created by Some People in a class at All Saints</p>"
         }
     },
-    "update": "2023-11-22T18:40:32.581Z",
+    "update": "2023-11-22T19:17:48.533Z",
     "pages": [
         {
             "name": "demo",
-            "url": "/p/demo.html"
+            "url": "./p/demo.html"
         }
     ]
 }

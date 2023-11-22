@@ -87,11 +87,11 @@ farr.forEach((file, index, arr) => {
         }
     }
     // Write to file (in P directory)
-    fs.writeFileSync("./p/" + file.replace(".md", ".html"), html, "utf8")
+    fs.writeFileSync(config.htmlDir + "/" + file.replace(".md", ".html"), html, "utf8")
     // Tell Terminal which file is finished
     pgdt.push({
         "name": file.replace(".md", "").replace("_", " "),
-        "url": "/p/" + (function () {
+        "url": config.htmlDir + "/" + (function () {
             if (act) {
                 return file.replace(".md", "")
             } else {

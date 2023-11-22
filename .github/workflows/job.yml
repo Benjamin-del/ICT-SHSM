@@ -8,7 +8,7 @@
 
 
 name: Update Files
-run-name: Run Custom SSR
+run-name: Run Custom SSG
 on: 
   push:
 jobs:
