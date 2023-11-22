@@ -5,8 +5,8 @@
     },
     "pages": [
         {
-            "name": "test",
-            "url": "/p/test.html"
+            "name": "about",
+            "url": "/p/about.html"
         }
     ]
 }

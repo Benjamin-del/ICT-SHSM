@@ -1,14 +1,14 @@
-/****************************************************
-* How to use:                                       *
-*  Write markdown files in the md directory         *
-*  Run this file with node                          *
-*****************************************************/
+///////////////////////////////////////////////////////
+//  Write markdown files in the md directory         //
+//  Run this file with node  (node server.js)        //
+///////////////////////////////////////////////////////
 
 const fs = require('fs');
-const showdown  = require('showdown');
-const config = require('./config.json');
+const { marked } = require('marked');
 
+const config = require('./config.json');
 const mdDir = './md';
+
 const farr = fs.readdirSync(mdDir)
 farr.forEach((file, index, arr) => {
     // Tell Terminal which file is being worked on
@@ -18,9 +18,18 @@ farr.forEach((file, index, arr) => {
     // Read file
     const md = fs.readFileSync(pth, 'utf8');
     // Convert to HTML
-    const converter = new showdown.Converter();
     // Wrap in HTML
-    const parse = `<!DOCTYPE html><html><body><div>${converter.makeHtml(md)}</div></body></html>`
+    const parse = `<!DOCTYPE html>
+    <html>
+        <head>
+            <title> ${config.name} | ${file.replace(".md", "").replace("_", " ")}</title>
+        </head>
+        <body>
+            <div>
+                ${marked.parse(md)}
+            </div>
+        </body>
+    </html>`
     // Write to file (in P directory)
     fs.writeFileSync("./p/" + file.replace(".md", ".html"), parse, "utf8")
     // Tell Terminal which file is finished
