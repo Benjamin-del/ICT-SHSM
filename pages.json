@@ -4,9 +4,13 @@
         "authours": "People",
         "mdDir": "./md",
         "github": "https://github.com/Benjamin-del/ICT-SHSM",
-        "url": "https://benjamin-del.github.io/ICT-SHSM"
+        "url": "https://benjamin-del.github.io/ICT-SHSM",
+        "customization": {
+            "display_source": true,
+            "css_path": false
+        }
     },
-    "update": "2023-11-22T17:27:09.202Z",
+    "update": "2023-11-22T17:39:42.574Z",
     "pages": [
         {
             "name": "about",

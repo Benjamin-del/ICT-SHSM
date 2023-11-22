@@ -3,5 +3,9 @@
     "authours":"People",
     "mdDir":"./md",
     "github":"https://github.com/Benjamin-del/ICT-SHSM",
-    "url":"https://benjamin-del.github.io/ICT-SHSM"
+    "url":"https://benjamin-del.github.io/ICT-SHSM",
+    "customization": {
+        "display_source": true,
+        "css_path": false
+    }
 }
