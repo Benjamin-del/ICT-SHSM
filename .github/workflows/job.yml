@@ -1,5 +1,9 @@
 jobs:
   # Build job
+  name: Boilerplate
+  run-name: Build
+  on: 
+    push:
   build:
     runs-on: ubuntu-latest
     steps:
