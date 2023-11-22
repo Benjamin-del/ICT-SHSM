@@ -1,7 +1,8 @@
 {
     "info": {
         "name": "ICT SHSM @ ASH",
-        "authours": "People"
+        "authours": "People",
+        "mdDir": "./md"
     },
     "pages": [
         {
