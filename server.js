@@ -11,7 +11,6 @@ const config = require('./config.json');
 
 function getact() {
     if (process.argv[2] === "-a") {
-        console.log(process.argv[4].event)
         return process.argv[3] || "Unknown"
     } else {
         return "Server Mode"
