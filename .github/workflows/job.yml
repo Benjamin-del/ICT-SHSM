@@ -26,7 +26,7 @@ jobs:
         uses: actions/configure-pages@v3
       # Run the (Custom) SSR script
       # Add the a flag to signify it is run by a GH Action.
-      - name: Run SSR
+      - name: Generate HTML
         run: node server.js -a ${{github.actor}}
       # Upload the artifact to the repo
       - name: Upload artifact
