@@ -28,18 +28,12 @@ jobs:
       # Add the a flag to signify it is run by a GH Action.
       - name: Run SSR
         run: node server.js -a ${{github.actor}}
-      # Build the site with Jekyll, this configures all of the required files
-      #- name: Build with Jekyll
-       # uses: actions/jekyll-build-pages@v1
-        #with:
-         # source: ./
-          #destination: ./_site
       # Upload the artifact to the repo
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with: 
-          artifact-name: site
           path: ./
+          retention-days: 1
   # Deployment job
   deploy:
     # Make sure the API token has the required scopes
