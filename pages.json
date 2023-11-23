@@ -1,14 +1,14 @@
 {
     "info": {
         "name": "ICT SHSM @ ASH",
-        "authours": "People",
+        "authours": "Benjamin, Nolan, Jun and Guillermo",
         "mdDir": "./md",
         "htmlDir": "./p",
         "github": "https://github.com/Benjamin-del/ICT-SHSM",
         "url": "https://benjamin-del.github.io/ICT-SHSM",
         "customization": {
             "display_source": true,
-            "css": false,
+            "css": "../global.css",
             "head": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
             "pre_content": "<div class=\"container\">",
             "post_content": "</div>",
@@ -16,11 +16,11 @@
             "footer": "<p>Created by Some People in a class at All Saints</p>"
         }
     },
-    "update": "2023-11-23T17:32:39.955Z",
+    "update": "2023-11-23T18:01:03.331Z",
     "pages": [
         {
-            "name": "demo",
-            "url": "/p/demo.html"
+            "name": "about",
+            "url": "/p/about.html"
         }
     ]
 }
