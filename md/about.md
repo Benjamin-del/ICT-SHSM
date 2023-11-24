@@ -25,3 +25,7 @@ Do you enjoy working with tech and want to work in the tech sector? If yes, then
 ## Testimonial: 
 * Anonymous: The ICT SHSM sets you up with the skills and knowledge you need related to computers, coding, and anything digital. It also provides you with a great opportunity with hands-on experience and real-world skills especially with co-op placements and other cool projects. Also, you could end up with many industry-recognized certifications which is basically like a stamp of approval that you know your stuff.
 
+# Contacts:
+* Scott Jamieson: scott.jamieson@ocsb.ca
+* James Bott: james.bott@ocsb.ca
+
