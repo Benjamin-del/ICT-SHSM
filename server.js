@@ -57,7 +57,7 @@ farr.forEach((file, index, arr) => {
             ${config.customization.pre_content}
             ${prettify(marked.parse(md))}
             ${config.customization.post_content}
-            <div class='${config.customization.footer_class}'>
+            <div class='${config.customization.footer_class} ${file}' id='content-${file}'>
                 ${getsrc()}
                 ${config.customization.footer}
             </div>

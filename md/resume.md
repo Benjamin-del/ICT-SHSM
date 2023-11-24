@@ -7,3 +7,4 @@ A few tips:
 * Use an online site such as Google Docs so that it can be updated frequently and can be shared via link.
 * Make sure there are no errors
 
+![Resume](/images/resume1.png "Resume")

@@ -16,11 +16,31 @@
             "footer": "<p>Created by Some People in a class at All Saints</p>"
         }
     },
-    "update": "2023-11-23T18:01:03.331Z",
+    "update": "2023-11-24T19:03:11.363Z",
     "pages": [
         {
             "name": "about",
             "url": "/p/about.html"
+        },
+        {
+            "name": "learning",
+            "url": "/p/learning.html"
+        },
+        {
+            "name": "reach",
+            "url": "/p/reach.html"
+        },
+        {
+            "name": "requirements",
+            "url": "/p/requirements.html"
+        },
+        {
+            "name": "resume",
+            "url": "/p/resume.html"
+        },
+        {
+            "name": "summerschool",
+            "url": "/p/summerschool.html"
         }
     ]
 }
