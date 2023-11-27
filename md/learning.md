@@ -6,3 +6,8 @@
 - attendance at a sector or trade show, a conference, a symposium, or a job fair
 - participation in a local, provincial, or national contest or competition with a focus on ICT
 - a tour of a local television/film studio or network monitoring centre
+
+[Go Home](../ "Go Home")
+
+![Image](https://thetruckingnetwork.ca/wp-content/uploads/2022/05/43766964_1783407758423721_4563217441341046784_n.jpg "image")
+

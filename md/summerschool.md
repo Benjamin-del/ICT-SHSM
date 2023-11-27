@@ -11,3 +11,5 @@ Many students consider completing their co-op placement during the summer. In or
 - Cooperative Education Linking Course Preferred: 
     - Enter the course code of the Grade 11 major courses that you completed that corresponds most to the work placement you are seeking (i.e. TEJ3M for Engineering / Mechanics, ICS3U for Programming, TGJ3M for Comm Tech / Multimedia / Web Design / Architecture / Social Media)
 - You MUST have a resume that is up-to-date
+
+[Go Home](../ "Go Home")

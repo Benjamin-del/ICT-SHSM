@@ -1,0 +1,26 @@
+body {font-family: sans-serif;background: rgb(100, 31, 45);margin: 0px;}
+
+.content {
+    background: white;
+    margin: 10vh;
+    padding: 5vh;
+    border-radius: 3vh;
+}
+
+.container {background: white;margin: 40px;padding: 10px;border-radius: 10px;}
+
+a {
+    color: rgb(100, 31, 45);
+    font-weight: 900;
+    text-decoration: none;
+    padding-inline: 10px;
+}
+
+a:hover {
+    text-decoration: underline
+}
+.footer {
+    background: white;
+    margin: 0px;
+    padding: 10px;
+}

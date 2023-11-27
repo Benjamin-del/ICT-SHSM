@@ -15,3 +15,12 @@
 * Technological Design - Grade 11 & 12 (TDJ3M, TDJ4M)
 * Radio, Audio, and Sound Production - Grade 11 (TGR3M)
 * Yearbook & Print Production  - Grade 11 & 12 (TGG3M, TGG4M)
+
+## Co-op placements:
+* High tech companies 
+* Educational training centres 
+* Tech support for a variety of companies
+
+![Image](https://www.ocsb.ca/wp-content/uploads/2019/10/PAH-Info-Tech-SHSM.jpg "image")
+
+[Go Home](../ "Go Home")
