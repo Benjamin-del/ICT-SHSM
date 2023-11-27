@@ -13,3 +13,5 @@ Many students consider completing their co-op placement during the summer. In or
 - You MUST have a resume that is up-to-date
 
 [Go Home](../ "Go Home")
+
+![Image](https://s39613.pcdn.co/wp-content/uploads/2019/11/Implementing-active-learning-and-student-centered-pedagogy.jpg "image")

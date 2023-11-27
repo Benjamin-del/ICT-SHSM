@@ -1,4 +1,10 @@
-body {font-family: sans-serif;background: rgb(100, 31, 45);margin: 0px;}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background: rgb(100, 31, 45);
+    margin: 0px;
+}
 
 .content {
     background: white;
@@ -7,7 +13,12 @@ body {font-family: sans-serif;background: rgb(100, 31, 45);margin: 0px;}
     border-radius: 3vh;
 }
 
-.container {background: white;margin: 40px;padding: 10px;border-radius: 10px;}
+.container {
+    background: white;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 a {
     color: rgb(100, 31, 45);
@@ -19,6 +30,7 @@ a {
 a:hover {
     text-decoration: underline
 }
+
 .footer {
     background: white;
     margin: 0px;
